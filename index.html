@@ -8,55 +8,89 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #ffffff;
-            text-align: center;
+            color: white;
             margin: 0;
             padding: 0;
         }
-        .header {
-            background-color: #ff0000;
+        header {
+            background-color: #FF0000;
             padding: 20px;
+            text-align: center;
             font-size: 24px;
             font-weight: bold;
         }
-        .calendar {
+        .container {
+            width: 80%;
             margin: 20px auto;
-            max-width: 800px;
-            background: #1e1e1e;
             padding: 20px;
+            background-color: #1e1e1e;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
         }
-        .sneaker-item {
-            padding: 10px;
-            border-bottom: 1px solid #333;
+        .sneaker {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 20px;
         }
-        .sneaker-item:last-child {
-            border-bottom: none;
+        .sneaker img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 10px;
         }
-        .raffle-link {
-            color: #ffcc00;
+        .sneaker-details {
+            flex: 1;
+        }
+        .raffle-links a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #FF0000;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="header">Hype Nike & Jordan Sneaker Drops</div>
-    <div class="calendar">
-        <div class="sneaker-item">
-            <h3>Air Jordan 1 Retro High OG "Royal Reimagined"</h3>
-            <p>Release Date: March 10, 2025</p>
-            <a class="raffle-link" href="#" target="_blank">Enter Raffle</a>
+    <header>Sneaker Drop Calendar</header>
+    <div class="container">
+        <div class="sneaker">
+            <img src="https://sneakernews.com/wp-content/uploads/2025/02/air-jordan-12-flu-game-2025.jpg" alt="Air Jordan 12 Flu Game">
+            <div class="sneaker-details">
+                <h2>Air Jordan 12 "Flu Game"</h2>
+                <p><strong>Release Date:</strong> March 1, 2025</p>
+                <p><strong>Retail Price:</strong> $200</p>
+                <div class="raffle-links">
+                    <a href="https://www.nike.com/launch/t/air-jordan-12-flu-game">Nike SNKRS</a>
+                    <a href="https://www.footlocker.com/product/air-jordan-12-flu-game">Foot Locker</a>
+                    <a href="https://www.finishline.com/store/product/air-jordan-12-flu-game">Finish Line</a>
+                </div>
+            </div>
         </div>
-        <div class="sneaker-item">
-            <h3>Nike Dunk Low "Panda" Restock</h3>
-            <p>Release Date: March 15, 2025</p>
-            <a class="raffle-link" href="#" target="_blank">Enter Raffle</a>
+        <div class="sneaker">
+            <img src="https://sneakernews.com/wp-content/uploads/2025/02/air-jordan-4-seafoam-2025.jpg" alt="Air Jordan 4 Seafoam">
+            <div class="sneaker-details">
+                <h2>Air Jordan 4 "Seafoam"</h2>
+                <p><strong>Release Date:</strong> March 8, 2025</p>
+                <p><strong>Retail Price:</strong> $215</p>
+                <div class="raffle-links">
+                    <a href="https://www.nike.com/launch/t/air-jordan-4-seafoam">Nike SNKRS</a>
+                    <a href="https://www.champssports.com/product/air-jordan-4-seafoam">Champs Sports</a>
+                    <a href="https://www.hibbett.com/air-jordan-4-seafoam">Hibbett Sports</a>
+                </div>
+            </div>
         </div>
-        <div class="sneaker-item">
-            <h3>Travis Scott x Air Jordan 1 Low "Reverse Mocha"</h3>
-            <p>Release Date: March 20, 2025</p>
-            <a class="raffle-link" href="#" target="_blank">Enter Raffle</a>
+        <div class="sneaker">
+            <img src="https://sneakernews.com/wp-content/uploads/2025/02/union-la-air-jordan-1-high-og-2025.jpg" alt="Union LA x Air Jordan 1 High OG">
+            <div class="sneaker-details">
+                <h2>Union LA x Air Jordan 1 High OG</h2>
+                <p><strong>Release Date:</strong> February 27, 2025</p>
+                <p><strong>Retail Price:</strong> $200</p>
+                <div class="raffle-links">
+                    <a href="https://store.unionlosangeles.com/collections/air-jordan-1-high-og">Union LA</a>
+                    <a href="https://www.nike.com/launch/t/union-la-air-jordan-1-high-og">Nike SNKRS</a>
+                    <a href="https://www.sneakersnstuff.com/en/product/union-la-air-jordan-1-high-og">Sneakersnstuff</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
